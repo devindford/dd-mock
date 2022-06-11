@@ -9,7 +9,6 @@
     "lint": "eslint . --ext .js"
   },
   "license": "UNLICENSED",
-  "dependencies": {},
   "devDependencies": {
     "eslint": "^7.6.0",
     "eslint-config-standard": "^14.1.1",
@@ -17,6 +16,8 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "postcss-cli": "^7.1.1"
+    "postcss-cli": "^7.1.1",
+    "prettier": "^2.6.2",
+    "prettier-plugin-go-template": "^0.0.13"
   }
 }
