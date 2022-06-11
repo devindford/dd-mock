@@ -1,0 +1,37 @@
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "DatadogHQ mock"
+
+# Setting naviagion using the menu system (documentation https://gohugo.io/content-management/menus/)
+menu:
+  side:
+  # Product link (I comment the link name for readability so it's clear where one link start and ends for those who may not use yaml)
+   - identifier: Product
+     name: Product
+     url: "#"
+     Weight: 1
+  # Docs link
+   - identifier: Docs
+     name: Docs
+     url: "#"
+     Weight: 2
+  # Pricing link
+   - identifier: Pricing
+     name: Pricing
+     url: "#"
+     Weight: 3
+  # Customers link
+   - identifier: Customers
+     name: Customers
+     url: "#"
+     Weight: 4
+  # About link
+   - identifier: About
+     name: About
+     url: "#"
+     Weight: 5
+  # Blog link
+   - identifier: Blog
+     name: Blog
+     url: "#"
+     Weight: 6

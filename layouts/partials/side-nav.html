@@ -1,0 +1,24 @@
+<div class="nav-wrapper">
+  <nav class="navigation">
+    <div class="dd-logo">
+      <a href="/" class="logo-link">
+        <img
+          src="img/datadog-logo-v.png"
+          alt="White dog holding a photo in it's mouth"
+          class="logo"
+          width="96"
+          height="97"
+        />
+      </a>
+    </div>
+    <div class="nav-link-wrapper">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.side.ByWeight }}
+        <a href="{{ .URL }}" class="nav-link text-white text-uppercase">
+          {{ .Name }}
+        </a>
+      {{ end }}
+    </div>
+    <a href="#" class="login-link text-white">Login</a>
+  </nav>
+</div>

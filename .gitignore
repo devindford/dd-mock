@@ -70,3 +70,9 @@ Temporary Items
 
 # Ignore code-workspaces
 *.code-workspace
+
+# Optional eslint cache
+.eslintcache
+
+# Node Modules
+/node_modules
