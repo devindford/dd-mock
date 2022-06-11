@@ -12,13 +12,13 @@
       </a>
     </div>
     <div class="nav-link-wrapper">
-       {{ $currentPage := . }}
-      {{ range .Site.Menus.side.ByWeight  }}
-      <a href="{{ .URL }}" class="nav-link text-uppercase">
-        {{ .Name }}
-      </a>
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.side.ByWeight }}
+        <a href="{{ .URL }}" class="nav-link text-white text-uppercase">
+          {{ .Name }}
+        </a>
+      {{ end }}
     </div>
-    {{ end }}
-    <a href="#" class="login-link">Login</a>
+    <a href="#" class="login-link text-white">Login</a>
   </nav>
 </div>

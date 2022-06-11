@@ -5,7 +5,7 @@ title: "DatadogHQ mock"
 # Setting naviagion using the menu system (documentation https://gohugo.io/content-management/menus/)
 menu:
   side:
-  # Product link (I comment for readability with the name of each link so it's clear where one link start and ends for those who may not use yaml)
+  # Product link (I comment the link name for readability so it's clear where one link start and ends for those who may not use yaml)
    - identifier: Product
      name: Product
      url: "#"
