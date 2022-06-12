@@ -16,13 +16,7 @@
   margin: 0;
 }
 
-/*
-  3. Allow percentage-based heights in the application
-*/
-html,
-body {
-  height: 100%;
-}
+// I skip # 3 which is a 100% height on the body and html, I'm not a fan of the sideeffects it has
 
 /*
   Typographic tweaks!
@@ -79,25 +73,29 @@ h6 {
 
 // Variables
 
-$dd-purple: #724EEF;
-$apm: #14D071;
-$logs: #FF635A;
-$infra: #2B2AA7;
+$dd-purple: #724eef;
+$apm: #14d071;
+$logs: #ff635a;
+$infra: #2b2aa7;
 $black: #000000;
-$white: #FFFFFF;
-$airbb: #FF5A5F;
+$white: #ffffff;
+$airbb: #ff5a5f;
 $evernote: #292929;
-$samsung: #1428A0;
-$nginx: #00AA4E;
-$pager: #5DBD5F;
-$att: #00A8E0;
-$footer: linear-gradient(#443E48, #110617);
-$gray-bg: #F5F5F5;
-$separator: #C7C7C7;
+$samsung: #1428a0;
+$nginx: #00aa4e;
+$pager: #5dbd5f;
+$att: #00a8e0;
+$footer: linear-gradient(#443e48, #110617);
+$gray-bg: #f5f5f5;
+$separator: #c7c7c7;
 
 // Custom sizes
 .medium-text {
   font-size: 1.75rem;
+}
+
+.smaller-text {
+  font-size: 0.75rem;
 }
 
 .semibold-font {

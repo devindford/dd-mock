@@ -1,0 +1,62 @@
+@import "base";
+// to position text onto cards with multiply backgrounds
+.card-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+// card setup with multiply background color
+.apm-card {
+  position: relative;
+  background: url("/img/screenshots/apm.jpg") 0 0 no-repeat;
+  width: 557px;
+  height: 259px;
+
+  .apm-inner-card {
+    background: rgba($color: $apm, $alpha: 1);
+    overflow: hidden;
+    mix-blend-mode: multiply;
+    height: 100%;
+    z-index: 2;
+  }
+}
+
+.logs-card {
+  position: relative;
+  background: url("/img/screenshots/logs.jpg") 0 0 no-repeat;
+  width: 557px;
+  height: 259px;
+
+  .logs-inner-card {
+    background: rgba($color: $logs, $alpha: 1);
+    overflow: hidden;
+    mix-blend-mode: multiply;
+    height: 100%;
+    z-index: 2;
+  }
+}
+
+.infra-card {
+  position: relative;
+  background: url("/img/screenshots/infra.jpg") 0 0 no-repeat;
+  width: 557px;
+  height: 259px;
+
+  .infra-inner-card {
+    background: rgba($color: $infra, $alpha: 1);
+    overflow: hidden;
+    mix-blend-mode: multiply;
+    height: 100%;
+    z-index: 2;
+  }
+}
