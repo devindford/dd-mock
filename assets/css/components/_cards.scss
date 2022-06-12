@@ -6,7 +6,7 @@
   transform: translateY(-50%);
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  left: 6%;
 }
 
 .card-container {
@@ -18,45 +18,90 @@
 // card setup with multiply background color
 .apm-card {
   position: relative;
-  background: url("/img/screenshots/apm.jpg") 0 0 no-repeat;
-  width: 557px;
-  height: 259px;
+  background-color: rgba($color: $apm, $alpha: 1);
+  height: fit-content;
 
   .apm-inner-card {
-    background: rgba($color: $apm, $alpha: 1);
+    background: url("/img/screenshots/apm.jpg") 0 0 no-repeat;
+    background-size: contain;
     overflow: hidden;
     mix-blend-mode: multiply;
-    height: 100%;
+    height: 259px;
     z-index: 2;
-  }
-}
 
-.logs-card {
-  position: relative;
-  background: url("/img/screenshots/logs.jpg") 0 0 no-repeat;
-  width: 557px;
-  height: 259px;
-
-  .logs-inner-card {
-    background: rgba($color: $logs, $alpha: 1);
-    overflow: hidden;
-    mix-blend-mode: multiply;
-    height: 100%;
-    z-index: 2;
+    &:hover {
+      transition: background ease-in-out 1.5s;
+      background: rgba($color: $apm, $alpha: 1);
+      cursor: pointer;
+    }
   }
 }
 
 .infra-card {
   position: relative;
-  background: url("/img/screenshots/infra.jpg") 0 0 no-repeat;
-  width: 557px;
-  height: 259px;
+  height: fit-content;
+  background: rgba($color: $infra, $alpha: 1);
 
   .infra-inner-card {
-    background: rgba($color: $infra, $alpha: 1);
+    background: url("/img/screenshots/infra.jpg") 0 0 no-repeat;
+    background-size: auto;
     overflow: hidden;
     mix-blend-mode: multiply;
-    height: 100%;
+    height: 259px;
     z-index: 2;
+
+    &:hover {
+      transition: background ease-in-out 1.5s;
+      background: rgba($color: $infra, $alpha: 1);
+      cursor: pointer;
+    }
+  }
+}
+
+.logs-card {
+  position: relative;
+  background: rgba($color: $logs, $alpha: 1);
+  height: fit-content;
+
+  .logs-inner-card {
+    background: url("/img/screenshots/logs.jpg") 0 0 no-repeat;
+    overflow: hidden;
+    mix-blend-mode: multiply;
+    height: 259px;
+
+    z-index: 2;
+
+    &:hover {
+      background: rgba($color: $logs, $alpha: 1);
+      transition: background ease-in-out 1.5s;
+      cursor: pointer;
+    }
+  }
+}
+
+// Read more card
+
+.scroll-card {
+  width: 100%;
+  height: 585px;
+  background-color: $gray-bg;
+}
+
+.dd-purple {
+  color: $dd-purple;
+}
+
+.read-more-link {
+  border-bottom: 1px solid;
+  width: fit-content;
+  padding-bottom: 3px;
+}
+
+.text-carat-container {
+  position: relative;
+  cursor: pointer;
+
+  .carat-text {
+    max-width: 433px;
   }
 }
