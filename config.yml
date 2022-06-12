@@ -8,30 +8,31 @@ menu:
   # Product link (I comment the link name for readability so it's clear where one link start and ends for those who may not use yaml)
    - identifier: Product
      name: Product
-     url: "#"
+     url: "#product"
      Weight: 1
   # Docs link
    - identifier: Docs
      name: Docs
-     url: "#"
+     url: "#docs"
      Weight: 2
   # Pricing link
    - identifier: Pricing
      name: Pricing
-     url: "#"
+     url: "#pricing"
      Weight: 3
   # Customers link
    - identifier: Customers
      name: Customers
-     url: "#"
+     url: "#customers"
      Weight: 4
   # About link
    - identifier: About
      name: About
-     url: "#"
+     url: "#about"
      Weight: 5
   # Blog link
    - identifier: Blog
      name: Blog
-     url: "#"
+     url: "#blog"
      Weight: 6
+  

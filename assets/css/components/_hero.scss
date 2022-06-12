@@ -1,0 +1,73 @@
+@import "base";
+
+// CTA area
+.cta-btn {
+  background-color: transparent;
+  border: 3px solid $dd-purple;
+  padding: 8.125rem;
+  color: $dd-purple;
+  width: 100%;
+
+  &:hover {
+    background-color: $dd-purple;
+    color: $white;
+  }
+
+  transition: 0.5s all;
+}
+
+// Price Boxes
+.price-box-wrapper {
+  background-color: $gray-bg;
+  width: 100%;
+
+  .price-box {
+    width: 15.625rem;
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid $separator;
+
+    // remove last border
+    &.last-box {
+      border: none;
+    }
+
+    // Colors for each box
+    .infra-color {
+      color: $infra;
+    }
+
+    .apm-color {
+      color: $apm;
+    }
+
+    .logs-color {
+      color: $logs;
+    }
+    // text/link styles
+    .price-header {
+      font-size: 0.75rem;
+    }
+
+    .price-value {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .details-link {
+      border-bottom: 1px solid;
+      width: fit-content;
+      padding-bottom: 3px;
+    }
+
+    // List fix
+    .bullets {
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+}
