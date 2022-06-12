@@ -80,10 +80,11 @@ h6 {
 // Variables
 
 $dd-purple: #724EEF;
-$dd-green: #14D071;
-$dd-salmon: #FF635A;
-$dd-blue: #2B2AA7;
+$apm: #14D071;
+$logs: #FF635A;
+$infra: #2B2AA7;
 $black: #000000;
+$white: #FFFFFF;
 $airbb: #FF5A5F;
 $evernote: #292929;
 $samsung: #1428A0;
@@ -92,3 +93,13 @@ $pager: #5DBD5F;
 $att: #00A8E0;
 $footer: linear-gradient(#443E48, #110617);
 $gray-bg: #F5F5F5;
+$separator: #C7C7C7;
+
+// Custom sizes
+.medium-text {
+  font-size: 1.75rem;
+}
+
+.semibold-font {
+  font-weight: 500;
+}

@@ -1,6 +1,6 @@
 <div class="nav-wrapper">
-  <nav class="navigation">
-    <div class="dd-logo">
+  <nav class="navigation pl-2 pt-4">
+    <div class="dd-logo pt-4 pb-4 pl-3">
       <a href="/" class="logo-link">
         <img
           src="img/datadog-logo-v.png"
@@ -11,14 +11,17 @@
         />
       </a>
     </div>
-    <div class="nav-link-wrapper">
+    <div class="nav-link-wrapper mt-4">
       {{ $currentPage := . }}
       {{ range .Site.Menus.side.ByWeight }}
-        <a href="{{ .URL }}" class="nav-link text-white text-uppercase">
+        <a
+          href="{{ .URL }}"
+          class="nav-link text-white text-uppercase font-weight-bold"
+        >
           {{ .Name }}
         </a>
       {{ end }}
     </div>
-    <a href="#" class="login-link text-white">Login</a>
+    <a href="#login" class="mt-4 login-link nav-link text-white">Login</a>
   </nav>
 </div>

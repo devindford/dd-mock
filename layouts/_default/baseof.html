@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
-  {{- partial "head" . -}}
+  {{- partial "head" (dict "context" . "pageTitle" "Cloud Monitoring as a Service | Datadog") -}}
   <body>
-    {{- partial "side-nav" . -}}
-    <div class="content">
-      {{- block "main" . }}{{- end }}
-      {{- partial "footer" . -}}
-      {{- partial "script-footer" . -}}
-    </div>
+    <main class="page-wrapper">
+      {{- partial "side-nav" . -}}
+      <div class="content">
+        {{- block "main" . }}
+          {{ partial "hero" . }}
+        {{- end }}
+        {{- partial "footer" . -}}
+        {{- partial "script-footer" . -}}
+      </div>
+    </main>
   </body>
 </html>
