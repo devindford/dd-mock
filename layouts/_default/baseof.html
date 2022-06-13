@@ -7,13 +7,13 @@
         <div class="d-flex">
           {{ partial "side-nav" . }}
           <div class="content w-100">
-            {{ partial "mobile-nav" . }}
-            {{- block "main" . }}
+              {{ partial "mobile-nav" . }}
+              {{- block "main" . }}
               {{ partial "hero" . }}
               {{ partial "cards" . }}
+              {{- partial "footer" . -}}
             </div>
           </div>
-          {{- partial "footer" . -}}
           {{- end }}
         </div>
       </main>

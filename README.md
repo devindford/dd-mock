@@ -2,7 +2,7 @@
 
 The task was to create a site using [Hugo](https://gohugo.io/) with Bootstrap 4, SCSS and some Javascript to match the mock site that was provided.
 
-The site is hosted via S3 and Cloudfront per request, and can be accessed [here]()
+The site is hosted via S3 and Cloudfront per request, and can be accessed [here](https://d23m1q3yk7k5b9.cloudfront.net/)
 
 ## Summary
 
