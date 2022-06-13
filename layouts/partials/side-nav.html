@@ -12,7 +12,6 @@
       </a>
     </div>
     <div class="nav-link-wrapper mt-4">
-      {{ $currentPage := . }}
       {{ range .Site.Menus.side.ByWeight }}
         <a
           href="{{ .URL }}"

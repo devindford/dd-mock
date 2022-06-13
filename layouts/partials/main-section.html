@@ -1,6 +1,6 @@
 <div class="container mt-4">
-  <div class="row">
-    <div class="col-md-6 pl-0">
+  <div class="card-grid">
+    <div class="w-100 apm-area">
       <div class="apm-card mb-4">
         <div
           class="apm-inner-card d-flex flex-column justify-content-center"
@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6 pl-0">
+    <div class="w-100 infra-area">
       <div class="infra-card mb-4">
         <div
           class="infra-inner-card d-flex flex-column justify-content-center"
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6 pl-0 h-fit">
+    <div class="w-100 logs-area">
       <div class="logs-card mb-4">
         <div
           class="logs-inner-card d-flex flex-column justify-content-center"
@@ -50,8 +50,37 @@
           </p>
         </div>
       </div>
+      <div class="logo-grid">
+        {{ range .Site.Menus.logos.ByWeight }}
+          <div class="{{ .Identifier }} logo-card">
+            <div class="card-inner-wrapper">
+              <img src="{{ .URL }}" alt="{{ .Identifier }} logo" />
+            </div>
+          </div>
+        {{ end }}
+        <div
+          class="adroll d-flex flex-column justify-content-between py-4 pl-lg-4 px-sm-3 px-lg-0"
+        >
+          <div class="py-4">
+            <img src="img/company-logos/adroll.png" alt="adroll logo" />
+          </div>
+          <p>
+            “Datadog has been instrumental in managing our real-time
+            infrastructure, globally distributed in 5 data centers across
+            hundreds of instances, and thousands of different metrics and
+            dimensions for each host. I can't believe there was a time when we
+            didn't have Datadog.”
+          </p>
+          <p>
+            <strong>Valentino Volonghi </strong><br />Chief Technology Officer
+          </p>
+          <div>
+            <a class="dd-purple" href="#see-more">See More Stories</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="pl-0 col-md-6 overflow-hidden">
+    <div class="w-100 read-more-area">
       <div class="scroll-card d-flex flex-column justify-content-between">
         <div class="d-flex flex-column">
           <p class="smaller-text text-uppercase px-4 pt-4 dd-purple">
@@ -98,6 +127,5 @@
         </div>
       </div>
     </div>
-    <div class="pl-0 col-md-6">g</div>
   </div>
 </div>
