@@ -35,4 +35,22 @@ menu:
      name: Blog
      url: "#blog"
      Weight: 6
+  # Logo cards
+  logos:
+    - identifier: airbb
+      url: "img/company-logos/airbb.png"
+    - identifier: peleton
+      url: "img/company-logos/peleton.png"
+    - identifier: evernote
+      url: "img/company-logos/evernote.png"
+    - identifier: samsung
+      url: "img/company-logos/samsung.png"
+    - identifier: nginx
+      url: "img/company-logos/nginx.png"
+    - identifier: pagerduty
+      url: "img/company-logos/pagerduty.png"
+    - identifier: wholefoods
+      url: "img/company-logos/wholefoods.png"
+    - identifier: att
+      url: "img/company-logos/att.png"
   

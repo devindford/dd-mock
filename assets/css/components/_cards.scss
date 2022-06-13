@@ -1,0 +1,225 @@
+@import "base";
+// to position text onto cards with multiply backgrounds
+.card-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  left: 6%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+// card setup with multiply background color
+.apm-card {
+  position: relative;
+  background-color: rgba($color: $apm, $alpha: 1);
+  height: fit-content;
+
+  .apm-inner-card {
+    background: url("/img/screenshots/apm.jpg") 0 0 no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    mix-blend-mode: multiply;
+    height: 259px;
+    z-index: 2;
+
+    &:hover {
+      transition: background ease-in-out 1.5s;
+      background: rgba($color: $apm, $alpha: 1);
+      cursor: pointer;
+    }
+  }
+}
+
+.infra-card {
+  position: relative;
+  height: fit-content;
+  background: rgba($color: $infra, $alpha: 1);
+
+  .infra-inner-card {
+    background: url("/img/screenshots/infra.jpg") 0 0 no-repeat;
+    background-size: auto;
+    overflow: hidden;
+    mix-blend-mode: multiply;
+    height: 259px;
+    z-index: 2;
+
+    &:hover {
+      transition: background ease-in-out 1.5s;
+      background: rgba($color: $infra, $alpha: 1);
+      cursor: pointer;
+    }
+  }
+}
+
+.logs-card {
+  position: relative;
+  background: rgba($color: $logs, $alpha: 1);
+  height: fit-content;
+
+  .logs-inner-card {
+    background: url("/img/screenshots/logs.jpg") 0 0 no-repeat;
+    overflow: hidden;
+    mix-blend-mode: multiply;
+    height: 259px;
+
+    z-index: 2;
+
+    &:hover {
+      background: rgba($color: $logs, $alpha: 1);
+      transition: background ease-in-out 1.5s;
+      cursor: pointer;
+    }
+  }
+}
+
+// Read more card
+
+.scroll-card {
+  width: 100%;
+  height: 585px;
+  background-color: $gray-bg;
+  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+.dd-purple {
+  color: $dd-purple;
+}
+
+.read-more-link {
+  border-bottom: 1px solid;
+  width: fit-content;
+  padding-bottom: 3px;
+}
+
+.text-carat-container {
+  position: relative;
+  cursor: pointer;
+
+  .carat-text {
+    max-width: 433px;
+  }
+}
+
+// Logo cards
+
+.logo-cards {
+  margin-top: 1.5rem;
+}
+
+.logo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 186px;
+  height: 184px;
+  img {
+    padding: 0 28px;
+  }
+}
+
+.logo-grid {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "abb adroll adroll"
+    "peleton adroll adroll"
+    "evernote samsung nginx"
+    "pager whole att";
+  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.15));
+
+  @media (max-width: 768px) {
+    grid-template-areas:
+      "adroll adroll"
+      "abb peleton"
+      "evernote samsung"
+      "nginx pager"
+      "whole att";
+  }
+}
+
+.airbb {
+  background-color: $airbb;
+  grid-area: abb;
+}
+
+.peleton {
+  background-color: $black;
+  grid-area: peleton;
+}
+
+.evernote {
+  background-color: $evernote;
+  grid-area: evernote;
+}
+
+.adroll {
+  grid-area: adroll;
+  background-color: $gray-bg;
+}
+
+.samsung {
+  background-color: $samsung;
+  grid-area: samsung;
+}
+.nginx {
+  background-color: $nginx;
+  grid-area: nginx;
+}
+.pagerduty {
+  background-color: $pager;
+  grid-area: pager;
+}
+.wholefoods {
+  background-color: $black;
+  grid-area: whole;
+}
+.att {
+  background-color: $att;
+  grid-area: att;
+}
+
+// Due to the limitations of bootstraps grid system, we need to roll our own to accomplish the design
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "apm infra"
+    "logs read-more"
+    "logs read-more";
+  gap: 1rem;
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+    grid-template-columns: min-content;
+    grid-template-areas:
+      "apm"
+      "infra"
+      "logs"
+      "read-more";
+  }
+}
+
+.apm-area {
+  grid-area: apm;
+}
+
+.infra-area {
+  grid-area: infra;
+}
+
+.read-more-area {
+  grid-area: read-more;
+}
+
+.logs-area {
+  grid-area: logs;
+}

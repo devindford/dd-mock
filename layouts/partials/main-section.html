@@ -1,0 +1,131 @@
+<div class="container mt-4">
+  <div class="card-grid">
+    <div class="w-100 apm-area">
+      <div class="apm-card mb-4">
+        <div
+          class="apm-inner-card d-flex flex-column justify-content-center"
+        ></div>
+        <div class="card-content">
+          <h6
+            class="text-center text-uppercase text-white smaller-text font-weight-bold"
+          >
+            APM
+          </h6>
+          <p class="text-center text-white medium-text">
+            Get full visibility into modern applications
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 infra-area">
+      <div class="infra-card mb-4">
+        <div
+          class="infra-inner-card d-flex flex-column justify-content-center"
+        ></div>
+        <div class="card-content">
+          <h6
+            class="text-center text-white text-uppercase smaller-text font-weight-bold"
+          >
+            Infrastructure
+          </h6>
+          <p class="text-center text-white medium-text">
+            Get full visibility into modern applications
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 logs-area">
+      <div class="logs-card mb-4">
+        <div
+          class="logs-inner-card d-flex flex-column justify-content-center"
+        ></div>
+        <div class="card-content">
+          <h6
+            class="text-center text-white text-uppercase smaller-text font-weight-bold"
+          >
+            Logs management
+          </h6>
+          <p class="text-center text-white medium-text">
+            Analyze and explore log data in context
+          </p>
+        </div>
+      </div>
+      <div class="logo-grid">
+        {{ range .Site.Menus.logos.ByWeight }}
+          <div class="{{ .Identifier }} logo-card">
+            <div class="card-inner-wrapper">
+              <img src="{{ .URL }}" alt="{{ .Identifier }} logo" />
+            </div>
+          </div>
+        {{ end }}
+        <div
+          class="adroll d-flex flex-column justify-content-between py-4 pl-lg-4 px-sm-3 px-lg-0"
+        >
+          <div class="py-4">
+            <img src="img/company-logos/adroll.png" alt="adroll logo" />
+          </div>
+          <p>
+            “Datadog has been instrumental in managing our real-time
+            infrastructure, globally distributed in 5 data centers across
+            hundreds of instances, and thousands of different metrics and
+            dimensions for each host. I can't believe there was a time when we
+            didn't have Datadog.”
+          </p>
+          <p>
+            <strong>Valentino Volonghi </strong><br />Chief Technology Officer
+          </p>
+          <div>
+            <a class="dd-purple" href="#see-more">See More Stories</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 read-more-area">
+      <div class="scroll-card d-flex flex-column justify-content-between">
+        <div class="d-flex flex-column">
+          <p class="smaller-text text-uppercase px-4 pt-4 dd-purple">
+            Observability
+          </p>
+          <div
+            class="text-carat-container d-flex align-items-center justify-content-between mb-0 px-4"
+          >
+            <p class="medium-text carat-text">
+              With turn-key integrations, Datadog seamlessly aggregates metrics
+              and events across the full devops stack
+            </p>
+            <div class="carat pl-4">
+              <svg
+                width="27"
+                height="52"
+                viewBox="0 0 27 52"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M1 1L26.1688 26.1688L1 51.3377" stroke="black" />
+              </svg>
+            </div>
+          </div>
+          <div class="pb-2 pl-4">
+            <a href="#read-more" class="read-more-link dd-purple">Read More</a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between pl-4 pb-4">
+          <div class="w-100">
+            <img
+              src="img/screenshots/home-observability.jpg"
+              alt="dashboard with multiple company logos"
+              class="h-100"
+            />
+          </div>
+          <div>
+            <img
+              src="img/screenshots/home-dashboards.jpg"
+              alt="dashboard with analytic numbers displayed"
+              class="w-100 h-100"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
