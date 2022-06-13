@@ -8,14 +8,6 @@ const toggleMobileMenu = () => {
   mobileNavLinkWrapper.classList.toggle("active");
 };
 
-const hideSideNav = () => {
-  sideNav.classList.toggle("hide-side-nav");
-};
-
-const hideMobileNav = () => {
-  sideNav.classList.toggle("hide-mobile-nav");
-};
-
 const handleSmallScreen = (e) => {
   if (e.matches) {
     mobileNav.classList.remove("hide-mobile-nav");
