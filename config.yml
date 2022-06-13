@@ -1,4 +1,4 @@
-baseURL: "http://example.org/"
+baseURL: "https://d23m1q3yk7k5b9.cloudfront.net/"
 languageCode: "en-us"
 title: "DatadogHQ mock"
 
@@ -54,3 +54,25 @@ menu:
     - identifier: att
       url: "img/company-logos/att.png"
   
+#Deployment config
+
+deployment:
+  order:
+    - .jpg$
+    - .gif$
+  targets:
+    - name: mydeployment
+      URL: 's3://dd-site-2022?region=us-east-1'
+      cloudFrontDistributionID: E1VNWLOLPE7C1A
+  matchers:
+    - pattern: ^.+\.(js|css|svg|ttf)$
+      cacheControl: 'max-age=31536000, no-transform, public'
+      gzip: true
+    - pattern: ^.+\.(png|jpg)$
+      cacheControl: 'max-age=31536000, no-transform, public'
+      gzip: false
+    - pattern: ^sitemap\.xml$
+      contentType: application/xml
+      gzip: true
+    - pattern: ^.+\.(html|xml|json)$
+      gzip: true
