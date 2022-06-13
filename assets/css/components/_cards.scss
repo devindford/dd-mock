@@ -85,6 +85,7 @@
   width: 100%;
   height: 585px;
   background-color: $gray-bg;
+  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.15));
 }
 
 .dd-purple {
@@ -105,6 +106,8 @@
     max-width: 433px;
   }
 }
+
+// Logo cards
 
 .logo-cards {
   margin-top: 1.5rem;
@@ -129,6 +132,7 @@
     "peleton adroll adroll"
     "evernote samsung nginx"
     "pager whole att";
+  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.15));
 
   @media (max-width: 768px) {
     grid-template-areas:

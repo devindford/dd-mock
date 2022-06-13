@@ -1,0 +1,28 @@
+@import "base";
+
+.footer {
+  background: linear-gradient(#443e48, #110617);
+  background: -moz-linear-gradient(#443e48 #110617);
+}
+
+.free-cta {
+  background-color: transparent;
+  border: 1px $gray-bg solid;
+  color: $white;
+  width: 166px;
+  padding: 15px 0;
+  font-weight: 500;
+  margin-top: 1rem;
+
+  &:hover {
+    background-color: $dd-purple;
+  }
+}
+
+.footer-links {
+  span {
+    a {
+      color: $white;
+    }
+  }
+}

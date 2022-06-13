@@ -2,13 +2,17 @@
 <html>
   {{- partial "head" (dict "context" . "pageTitle" "Cloud Monitoring as a Service | Datadog") -}}
   <body>
-    <main class="page-wrapper">
-      {{- partial "side-nav" . -}}
-      <div class="content w-100">
-        {{- block "main" . }}
-          {{ partial "hero" . }}
-          {{ partial "main-section" . }}
-        {{- end }}
+    <main>
+      <div class="page-wrapper">
+        <div class="d-flex">
+          {{- partial "side-nav" . -}}
+          <div class="content w-100">
+            {{- block "main" . }}
+              {{ partial "hero" . }}
+              {{ partial "main-section" . }}
+            {{- end }}
+          </div>
+        </div>
         {{- partial "footer" . -}}
         {{- partial "script-footer" . -}}
       </div>
