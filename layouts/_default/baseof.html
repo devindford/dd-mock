@@ -5,17 +5,18 @@
     <main>
       <div class="page-wrapper">
         <div class="d-flex">
-          {{- partial "side-nav" . -}}
+          {{ partial "side-nav" . }}
           <div class="content w-100">
+            {{ partial "mobile-nav" . }}
             {{- block "main" . }}
               {{ partial "hero" . }}
-              {{ partial "main-section" . }}
-            {{- end }}
+              {{ partial "cards" . }}
+            </div>
           </div>
+          {{- partial "footer" . -}}
+          {{- end }}
         </div>
-        {{- partial "footer" . -}}
-        {{- partial "script-footer" . -}}
-      </div>
-    </main>
+      </main>
+      {{- partial "script-footer" . -}}
   </body>
 </html>
